@@ -1,0 +1,553 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.coolcream_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+.coolcream_header input[type=search] {
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(244, 238, 238);
+  background-image: url("searchicon.svg");
+  background-position: 270px 5px;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+.coolcream_header input[type=search]::-moz-placeholder {
+  color: #006eff;
+}
+.coolcream_header input[type=search]::placeholder {
+  color: #006eff;
+}
+.coolcream_header .navbar a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 10px;
+}
+.coolcream_header .navbar a i {
+  margin-right: 10px;
+  color: #006eff;
+}
+
+.coolcream_banner img {
+  border-radius: 10px;
+  margin: 30px 0px 30px 140px;
+  width: 1260px;
+}
+
+.coolcream_subheading p {
+  margin: 0 0 2px 140px;
+}
+.coolcream_subheading .subhead {
+  font-weight: 700;
+  color: #051937;
+}
+.coolcream_subheading .minihead {
+  color: gray;
+  font-size: smaller;
+}
+
+.coolcream_categories {
+  margin: 50px 120px 30px 120px;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.coolcream_categories figure {
+  margin-top: -25px;
+  transition: 0.3s ease;
+}
+.coolcream_categories figure figcaption {
+  text-align: center;
+  margin-top: 10px;
+}
+.coolcream_categories img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.coolcream_categories figure:hover {
+  scale: 1.08;
+  filter: saturate(250%);
+}
+
+.coolcream_desserts {
+  overflow-x: scroll;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.coolcream_desserts .desserts {
+  margin: 20px 120px 30px 0px;
+  gap: 25px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.coolcream_desserts .desserts figure {
+  margin: 0px;
+  transition: 0.3s ease;
+}
+.coolcream_desserts .desserts img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.coolcream_desserts .desserts figure:hover {
+  scale: 1.08;
+  margin-left: 15px;
+  filter: saturate(250%);
+}
+
+.coolcream_special {
+  display: flex;
+  gap: 30px;
+  margin: 50px 120px 50px 120px;
+}
+.coolcream_special img {
+  width: 400px;
+  margin-left: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.coolcream_special .specialdesc h1 {
+  margin-left: 25px;
+  color: #006eff;
+  margin-top: 120px;
+  margin-bottom: 0px;
+}
+.coolcream_special .specialdesc p {
+  margin-top: 10px;
+  margin-left: 25px;
+  text-align: justify;
+  width: 80%;
+  color: rgb(44, 39, 39);
+}
+.coolcream_special .specialdesc input {
+  margin-left: 25px;
+  background-color: #006eff;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #006eff;
+  padding: 10px;
+  width: 110px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.coolcream_special .specialdesc input:hover {
+  border: 2px solid #006eff;
+  background-color: white;
+  color: #006eff;
+}
+
+.coolcream_chef {
+  margin: 40px 140px 50px 140px;
+}
+.coolcream_chef .coolcream_subheading {
+  margin-bottom: 30px;
+}
+.coolcream_chef .subhead, .coolcream_chef .minihead {
+  text-align: center;
+  margin-left: 70px;
+  font-size: xx-large;
+}
+.coolcream_chef .subhead {
+  margin-bottom: -10px;
+}
+.coolcream_chef .coolcream_anvita {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background-color: #ffd43b;
+}
+.coolcream_chef .coolcream_anvita img {
+  width: 450px;
+  border-radius: 20px;
+}
+.coolcream_chef .coolcream_anvita p {
+  margin-top: 70px;
+  margin-right: 40px;
+  margin-left: 40px;
+  font-size: 900;
+  font-weight: bolder;
+  color: #051937;
+  text-align: justify;
+}
+.coolcream_chef .coolcream_chintakaya {
+  display: flex;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background-color: #ffd43b;
+}
+.coolcream_chef .coolcream_chintakaya img {
+  width: 450px;
+  border-radius: 20px;
+}
+.coolcream_chef .coolcream_chintakaya p {
+  margin-top: 70px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 900;
+  font-weight: bolder;
+  color: #051937;
+  text-align: justify;
+}
+
+.coolcream_reviews {
+  margin-left: 140px;
+  margin-right: 120px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.coolcream_reviews img {
+  width: 195px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.coolcream_hook {
+  margin-top: 70px;
+  margin-left: 140px;
+  margin-right: 120px;
+  text-align: center;
+}
+.coolcream_hook h1 {
+  color: #051937;
+}
+.coolcream_hook input {
+  background-color: #006eff;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #006eff;
+  padding: 10px;
+  width: 120px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.coolcream_hook input:hover {
+  border: 2px solid #006eff;
+  background-color: white;
+  color: #006eff;
+}
+
+.coolcream_footer {
+  margin-top: 50px;
+  background-color: #051937;
+  height: 25vh;
+}
+.coolcream_footer p {
+  padding-top: 30px;
+  color: rgb(179, 163, 163);
+  text-align: center;
+}
+.coolcream_footer .coolcream_funnybio {
+  padding: 0;
+  color: #ffffff;
+}
+.coolcream_footer .coolcream_socialmedia {
+  text-align: center;
+}
+.coolcream_footer .coolcream_socialmedia i {
+  margin-right: 20px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .coolcream_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
+  .coolcream_header input[type=search] {
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(244, 238, 238);
+    background-image: url("searchicon.svg");
+    background-position: 270px 5px;
+    background-repeat: no-repeat;
+    padding: 10px;
+  }
+  .coolcream_header input[type=search]::-moz-placeholder {
+    color: #006eff;
+  }
+  .coolcream_header input[type=search]::placeholder {
+    color: #006eff;
+  }
+  .coolcream_header .navbar a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 10px;
+  }
+  .coolcream_header .navbar a i {
+    margin-right: 10px;
+    color: #006eff;
+  }
+  .coolcream_banner img {
+    border-radius: 10px;
+    width: 950px;
+    height: 400px;
+    margin: 30px 10px 30px 10px;
+  }
+  .coolcream_subheading p {
+    margin: 0 0 2px 10px;
+  }
+  .coolcream_subheading .subhead {
+    font-weight: 700;
+    color: #051937;
+  }
+  .coolcream_subheading .minihead {
+    color: gray;
+    font-size: smaller;
+  }
+  .coolcream_categories {
+    margin: 50px 10px 30px 0px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .coolcream_categories figure {
+    margin-top: -25px;
+    transition: 0.3s ease;
+  }
+  .coolcream_categories figure figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: small;
+  }
+  .coolcream_categories img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .coolcream_categories figure:hover {
+    scale: 1.08;
+  }
+  .coolcream_desserts {
+    overflow-x: scroll;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .coolcream_desserts .desserts {
+    margin: 20px 0px 30px 0px;
+    gap: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .coolcream_desserts .desserts figure {
+    margin: 0px;
+    transition: 0.3s ease;
+  }
+  .coolcream_desserts .desserts img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .coolcream_desserts .desserts figure:hover {
+    scale: 1.08;
+    margin-left: 15px;
+  }
+  .coolcream_special {
+    display: flex;
+    gap: 30px;
+    margin: 50px 10px 50px 10px;
+  }
+  .coolcream_special img {
+    width: 400px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .coolcream_special .specialdesc {
+    margin-bottom: 90px;
+  }
+  .coolcream_special .specialdesc h1 {
+    margin-left: 25px;
+    color: #006eff;
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+  .coolcream_special .specialdesc p {
+    margin-top: 10px;
+    margin-left: 25px;
+    text-align: justify;
+    width: 80%;
+    color: rgb(44, 39, 39);
+  }
+  .coolcream_special .specialdesc input {
+    margin-left: 25px;
+    background-color: #006eff;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #006eff;
+    padding: 10px;
+    width: 110px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .coolcream_special .specialdesc input:hover {
+    border: 2px solid #006eff;
+    background-color: white;
+    color: #006eff;
+  }
+  .coolcream_chef {
+    margin: 40px 10px 50px 10px;
+    display: inline-block;
+  }
+  .coolcream_chef .coolcream_subheading {
+    margin-bottom: 30px;
+  }
+  .coolcream_chef .subhead, .coolcream_chef .minihead {
+    text-align: center;
+    margin-left: 70px;
+    font-size: xx-large;
+  }
+  .coolcream_chef .subhead {
+    margin-bottom: -10px;
+  }
+  .coolcream_chef .coolcream_anvita {
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: #ffd43b;
+  }
+  .coolcream_chef .coolcream_anvita img {
+    visibility: visible;
+    width: 300px;
+    border-radius: 20px;
+    margin-left: 0px;
+  }
+  .coolcream_chef .coolcream_anvita p {
+    margin-top: 70px;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 900;
+    font-weight: bolder;
+    color: #051937;
+    text-align: justify;
+  }
+  .coolcream_chef .coolcream_chintakaya {
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: #ffd43b;
+  }
+  .coolcream_chef .coolcream_chintakaya img {
+    visibility: visible;
+    width: 300px;
+    border-radius: 20px;
+  }
+  .coolcream_chef .coolcream_chintakaya p {
+    margin-top: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 900;
+    font-weight: bolder;
+    color: #051937;
+    text-align: justify;
+  }
+  .coolcream_reviews {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .coolcream_reviews img {
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .coolcream_hook {
+    margin-top: 70px;
+    margin-left: 140px;
+    margin-right: 120px;
+    text-align: center;
+  }
+  .coolcream_hook h1 {
+    color: #051937;
+    font-size: small;
+  }
+  .coolcream_hook input {
+    background-color: #006eff;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #006eff;
+    padding: 10px;
+    width: 100px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .coolcream_hook input:hover {
+    border: 2px solid #006eff;
+    background-color: white;
+    color: #006eff;
+  }
+  .coolcream_footer {
+    margin-top: 50px;
+    background-color: #051937;
+    height: 10vh;
+  }
+  .coolcream_footer p {
+    padding-top: 30px;
+    color: rgb(179, 163, 163);
+    text-align: center;
+  }
+  .coolcream_footer .coolcream_funnybio {
+    padding: 0;
+    color: #ffffff;
+  }
+  .coolcream_footer .coolcream_socialmedia {
+    text-align: center;
+  }
+  .coolcream_footer .coolcream_socialmedia i {
+    margin-right: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+}/*# sourceMappingURL=style.css.map */
